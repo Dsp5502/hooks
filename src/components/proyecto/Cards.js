@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Card } from 'react-bootstrap';
+// import { Button, Card } from 'react-bootstrap';
 
 const Cards = ({ nombre }) => {
   const [imagenes, setImagenes] = useState([]);
