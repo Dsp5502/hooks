@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from 'react-bootstrap';
 import styled from 'styled-components';
+import useCounter from '../hooks/useCounter';
 
 const Fondo = styled.div`
   background-color: papayawhip;
@@ -18,19 +19,8 @@ const ContenedorBtn = styled.div`
   margin-top: 15px;
 `;
 
-const Counter = ({ valor }) => {
-  const [counter, setCounter] = useState(valor);
-
-  const sumar = () => {
-    setCounter(counter + 1);
-  };
-  const restar = () => {
-    setCounter(counter - 1);
-  };
-  const reset = () => {
-    setCounter(10);
-  };
-
+const Counter = () => {
+  const { counter, restar, sumar, reset } = useCounter(0);
   return (
     <Fondo>
       <h1>

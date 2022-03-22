@@ -1,9 +1,9 @@
-import Counter from '../components/Counter';
+import CategoriasApp from '../components/proyecto/CategoriasApp';
 
 function App() {
   return (
-    <div className='App'>
-      <Counter valor={10} />
+    <div>
+      <CategoriasApp />
     </div>
   );
 }
